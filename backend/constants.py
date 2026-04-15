@@ -1,3 +1,8 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 HOTSPOTS = {
     # Manhattan
     "Central Park — The Ramble":  "L109518", 
@@ -11,7 +16,7 @@ HOTSPOTS = {
     # Midtown
     "Bryant Park":                "L683555", 
 }
-EBIRD_KEY = "fgsb3vuu2sks"
+EBIRD_KEY = os.getenv("EBIRD_API_KEY")
 GCP_PROJECT = "hong-agentic-ai-p1"
 GEMINI_MODEL = "gemini-2.0-flash-001"
 EBIRD_DAYS = 30

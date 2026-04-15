@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+langgraph
+langchain-google-vertexai
+langchain-core
+pandas
+httpx
+python-dotenv
+pytz

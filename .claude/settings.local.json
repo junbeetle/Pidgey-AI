@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(curl -s -X POST http://localhost:8000/analyze -H \"Content-Type: application/json\" -d '{\"query\":\"Which park has the most warblers?\"}' -m 60)",
-      "Bash(python -c \"import sys,json; d=json.loads\\(sys.stdin.read\\(\\)\\); print\\('rt:',d.get\\('response_type'\\)\\); sr=d.get\\('species_search_results',{}\\); print\\('is_generic:',sr.get\\('is_generic_type'\\)\\); print\\('top_species:',sr.get\\('top_species_names'\\)\\); print\\('grouped keys:', [list\\(r.keys\\(\\)\\) for r in sr.get\\('grouped_chart_data',[]\\)[:2]]\\)\")"
-    ]
-  }
-}
